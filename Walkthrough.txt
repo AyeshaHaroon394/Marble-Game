@@ -1,0 +1,54 @@
+#WALKTHROUGH
+
+Command Line Invocation
+python marble_game.py 5 4 standard human
+
+Walkthrough
+Initial State
+Red Marbles: 5
+Blue Marbles: 4
+Turn 1: Human's Turn
+The human player decides to take 1 red marble.
+
+Enter number of red marbles to take: 1
+Enter number of blue marbles to take: 0
+
+State after Turn 1:
+
+Red Marbles: 4
+Blue Marbles: 4
+Turn 2: Computer's Turn
+The computer uses the MinMax algorithm with Alpha Beta Pruning to determine the best move. Let's assume the computer decides to take 2 blue marbles.
+
+Computer takes 0 red marbles and 2 blue marbles.
+
+State after Turn 2:
+
+Red Marbles: 4
+Blue Marbles: 2
+Turn 3: Human's Turn
+The human player decides to take 2 red marbles.
+
+Enter number of red marbles to take: 2
+Enter number of blue marbles to take: 0
+
+State after Turn 3:
+
+Red Marbles: 2
+Blue Marbles: 2
+Turn 4: Computer's Turn
+The computer again uses the MinMax algorithm with Alpha Beta Pruning to determine the best move. Let's assume the computer decides to take 2 blue marbles.
+
+Computer takes 0 red marbles and 2 blue marbles.
+
+State after Turn 4:
+
+Red Marbles: 2
+Blue Marbles: 0
+End of Game
+The game ends as the blue marble pile is empty. Since it's the standard version, the player who faces an empty pile loses. Here, the computer loses the game as it made the move causing the blue pile to be empty.
+
+Final Score Calculation
+Red Marbles left: 2 (2 points each) -> 2 * 2 = 4 points
+Blue Marbles left: 0 (3 points each) -> 0 * 3 = 0 points
+
